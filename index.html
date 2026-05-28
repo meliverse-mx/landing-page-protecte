@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTECTE | Paneles Solares e Interconexión CFE</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="nav-container">
+            <div class="logo-area">
+                PR<span>O</span>TECTE
+            </div>
+            <ul class="nav-links">
+                <li><a href="#soluciones">Beneficios</a></li>
+                <li><a href="#cfe">Convenio CFE</a></li>
+                <li><a href="#cotizar" class="btn-cta-nav">Cotizar Gratis</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="badge">Inversión Inteligente e Inmediata</span>
+                <h1>Congela tu tarifa de luz con <span>PROTECTE</span></h1>
+                <p>Adquiere materiales premium, instalación con ingenieros certificados y convenio directo con CFE. ¡Reduce hoy tu recibo de luz hasta en un 95%!</p>
+                <div class="hero-buttons">
+                    <a href="#cotizar" class="btn-primary">Iniciar Diagnóstico</a>
+                    <a href="#cfe" class="btn-secondary">Calcular Ahorro</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3 id="stat-cfe">100%</h3>
+                <p>Trámite CFE Incluido</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="stat-ahorro">-95%</h3>
+                <p>Ahorro en tu Recibo</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="stat-garantia">25 Años</h3>
+                <p>Garantía de Paneles</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="soluciones" id="soluciones">
+        <div class="section-header">
+            <h2>Nuestra Solución Integral 360°</h2>
+            <p>Nos encargamos de todo el ecosistema tecnológico y legal para que tú solo disfrutes de los beneficios de la energía solar.</p>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-solar-panel"></i></div>
+                <h3>Materiales Premium</h3>
+                <p>Paneles solares e inversores Tier 1 de última generación con tecnología avanzada de máxima captación, garantizando alta durabilidad.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3>Instalación Certificada</h3>
+                <p>Estructuras de aluminio anodizado de alta resistencia, montadas de manera impecable y segura por ingenieros especializados.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
+                <h3>Convenio con CFE</h3>
+                <p>Cero burocracia para ti. Hacemos el papeleo técnico y legal completo para el cambio e instalación de tu medidor bidireccional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cfe-section" id="cfe">
+        <div class="cfe-container">
+            <div class="cfe-content">
+                <h2>Cero Burocracia: Tu Convenio con <span>CFE</span> Seguro</h2>
+                <p>La interconexión a la red requiere una validación estricta ante la Comisión Federal de Electricidad. En PROTECTE gestionamos todo el proyecto de punta a punta:</p>
+                <ul class="step-list">
+                    <li class="step-item">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h4>Proyecto Técnico Especializado</h4>
+                            <p>Desarrollamos planos de ingeniería y diagramas unifilares avalados por expertos para cumplir con la norma oficial.</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h4>Gestión de Ventanilla</h4>
+                            <p>Sometemos tu expediente técnico a CFE y le damos seguimiento constante sin que tengas que perder tu valioso tiempo.</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h4>Medidor Bidireccional Activado</h4>
+                            <p>CFE activa tu nuevo sistema para registrar la energía solar sobrante que le entregas a la red, acumulándola a tu favor.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="calculator-box">
+                <h3>Simulador de Ahorro Estimado</h3>
+                <div class="calc-group">
+                    <label for="pagoActual">¿Cuánto pagas al bimestre actualmente?</label>
+                    <input type="range" id="pagoActual" class="range-slider" min="2000" max="30000" step="500" value="5000">
+                    <div class="range-values">
+                        <span>$2,000 MXN</span>
+                        <span id="sliderValue">$5,000 MXN</span>
+                        <span>$30,000 MXN</span>
+                    </div>
+                </div>
+                <div class="calc-result-box">
+                    <p>Con paneles PROTECTE pagarías aproximadamente:</p>
+                    <div class="total-saving" id="pagoNuevo">$250 MXN</div>
+                    <p style="margin-top:8px; font-size:12px; color:#888;">*Ahorro estimado del 95% sujeto a condiciones de tu techo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="cotizar">
+        <div class="section-header">
+            <h2>Solicita tu Estudio Fotovoltaico Gratuito</h2>
+            <p>Usamos mapas satelitales para calcular cuántos paneles necesitas exactamente y presentarte una propuesta económica a tu medida.</p>
+        </div>
+        <div class="contacto-wrapper">
+            <form id="leadForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">WhatsApp de Contacto</label>
+                    <input type="tel" id="telefono" placeholder="Ej. 55 1234 5678" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="propiedad">Tipo de Proyecto</label>
+                    <select id="propiedad">
+                        <option value="Residencial">Residencial (Hogar)</option>
+                        <option value="Comercial">Comercial (Negocio o Empresa)</option>
+                        <option value="Industrial">Industrial o Agrícola</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Obtener Mi Cotización Gratis</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 PROTECTE - Sistemas de Energía Solar e Interconexión CFE. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
